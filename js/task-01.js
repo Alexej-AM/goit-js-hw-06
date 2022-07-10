@@ -1,21 +1,27 @@
-
-
 const categoriesRef = document.querySelector('#categories');
 console.log('Number of categories:', categoriesRef.children.length);
-
 const itemRef = document.querySelectorAll('.item');
 
 
+//Пример 1
 
-
-
-const qqq = itemRef.forEach((element) => {
+const listChildren = itemRef.forEach((element) => {
     console.log("Category: ", element.firstElementChild.textContent);
     console.log("Elements: ", element.lastElementChild.children.length);
 });
 
 
 
+
+
+
+//Пример 2
+
+// const listChildren = [...categoriesRef.children];
+// listChildren.forEach(elem => {
+//     console.dir(elem.children[0].textContent);
+//     console.dir(elem.children[1].children.length);
+//   });
 
 
 
